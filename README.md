@@ -13,10 +13,18 @@ A idéia é facilitar a edição da página que utiliza componentes do Bootstrap. A p
 
 ```
 <div class="progress">
-	<div class="progress-bar progress-bar-label" role="progressbar" aria-valuenow="**70**" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: **70**%;">**Javascript** - **70**%</div>
+	<div class="progress-bar progress-bar-label" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 70%;">Javascript - 70%</div>
 </div>
 ```
-O que esta em negrito são as variáveis, onde utilizo o Spring MVC para popular essa informação.
+No exemplo acima, onde tem o número "70" e a tecnologia "Javascript", fiz um programa com o Spring MVC onde preencho um formulário com essas duas informações e populo essa informação tornando o processo dinâmico.
+
+```
+<c:forEach items="${skills}" var="conhecimento">
+	<rdfreitas:progressBar quantidade="${conhecimento.quantidade}" conhecimento="${conhecimento.conhecimento}" />
+</c:forEach>
+				
+```
+O código agora fica assim.
 
 ## Instalando as ferramnetas para o desenvolvimento ##
 

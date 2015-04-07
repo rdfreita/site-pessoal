@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAM,CACL,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,MAAM,CACd,OAAO,CAAE,CAAC",
+"sources": ["../../../sass/estilo_sistema.scss"],
+"names": [],
+"file": "estilo_sistema.css"
+}

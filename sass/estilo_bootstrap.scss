@@ -1,0 +1,262 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	font-family: 'play', 'sans-serif';
+	color: #fff;
+	
+	article{
+
+		header{
+			background: #00a3e6;
+
+			.navbar{
+				margin: 0;
+			}
+
+			.meu-perfil{
+				margin-top: 20px;
+
+
+				.perfil{
+
+					p{
+						line-height: 1.5em;
+						font-size: 1em;
+						margin: 20px 0 40px;
+						clear: both;
+					}
+
+					.titulo-perfil{
+						color: #000;
+						font-size: 24px;
+					}
+				}
+				.contato{
+					
+					.titulo-contato{
+						
+						margin-top: 20px;
+					}
+
+					ul{
+						clear: both;
+						margin-top: 112px;
+						margin-left: 15px;
+						list-style: none;
+
+						li{
+							font-size: 50px;
+							text-shadow: 5px 5px 5px #000000;
+						}
+					}
+				}
+			}
+		}
+
+		.formacao{
+			clear: both;
+			background: #2d3e50;
+			
+
+			ul{
+				li{
+					font-weight: bold;
+					ul{
+						li{
+							margin-left: 30px;
+							font-weight: normal;
+
+							&:last-child{
+								margin-bottom: 20px;
+							}
+						}
+					}
+				}
+			}
+
+			.titulos-formacao{
+				padding: 20px 0;
+
+				ul{
+					list-style: none;
+
+					li{
+
+						&.titulo-cursos{
+						}
+						&.titulo-anos{
+							text-align: center;
+						}
+						&.titulo-experiencias{
+						}
+					}
+				}
+			}
+
+			.ano2015, .ano2014, .ano2013, .ano2012, .ano2010, .ano2006, .ano2005{
+				clear: both;
+				border-top: 2px solid #fff;
+				padding: 10px 0;
+
+				.cursos{
+				}
+				.ano{
+					text-align: center;
+					height: 70px;
+					background: #00a3e6;
+					line-height: 70px;
+					border: 2px solid #fff;
+					border-radius: 215px;
+					font-size: 20px;
+					width: 70px;
+					margin: 0 auto;
+				}
+				.experiencias{
+				}
+			}
+		}
+		.classeConhecimento{
+			background: #00a3e6;
+			
+
+
+			h2{
+				text-align: center;
+				font-size: 32px;
+				padding: 20px 0;
+			}
+
+			.progress-bar-label{
+				text-align: left;
+				padding-left: 10px;
+				font-size: 16px;
+			}
+		}
+		.portfolio{
+			background: #2d3e50;
+			
+
+
+			h2{
+				text-align: center;
+				font-size: 32px;
+				padding: 20px 0;
+			}
+
+			.projeto{
+				margin-left: 30px;
+				border-bottom: 2px solid #fff;
+				padding-bottom: 20px;
+
+				.titulo-portfolio{
+					font-size: 30px;
+				}
+
+				ul{
+					list-style: none;
+
+					li{
+						float: left;
+						margin-right: 35px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+	body{
+
+		article{
+
+			header{
+				.meu-perfil{
+
+					.perfil{
+						font-size: 0.9em;
+						text-align: justify;
+					}
+					.contato{
+						ul{
+							list-style: none;
+
+							li{
+								font-size: 0.9em;
+								text-shadow:0 0 0 #000000;
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+			.formacao{
+				.titulos-formacao{
+					display: none;
+				}
+			}
+			.classeConhecimento{
+				.progress-bar-label{
+					font-size: 20px;
+				}
+			}
+			.portfolio{
+				.projeto{
+					.imagem-portfolio{
+						width: 240px;
+						height: 143px;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait){
+	body{
+
+		article{
+
+			header{
+				.meu-perfil{
+
+					.perfil{
+						font-size: 0.9em;
+						text-align: justify;
+					}
+					.contato{
+						ul{
+							list-style: none;
+
+							li{
+								font-size: 0.9em;
+								text-shadow:0 0 0 #000000;
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+			.formacao{
+				.titulos-formacao{
+					display: none;
+				}
+			}
+			.classeConhecimento{
+				.progress-bar-label{
+					font-size: 25px;
+				}
+			}
+			.portfolio{
+				.projeto{
+					.imagem-portfolio{
+						width: 240px;
+						height: 143px;
+					}
+				}
+			}
+		}
+	}
+}

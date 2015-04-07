@@ -15,8 +15,10 @@ public class ConnectionFactory {
 			throw new SQLException(e);
 		}
 
-		return DriverManager.getConnection("jdbc:mysql://mysql01-farm58.kinghost.net/freitasdev",
-				"freitasdev", "o1w3t6");
+		/*return DriverManager.getConnection("jdbc:mysql://mysql01-farm58.kinghost.net/freitasdev",
+				"freitasdev", "o1w3t6");*/
+		return DriverManager.getConnection("jdbc:mysql://localhost/rdfreitas",
+				"root", "scoobydoo");
 	}
 
 }

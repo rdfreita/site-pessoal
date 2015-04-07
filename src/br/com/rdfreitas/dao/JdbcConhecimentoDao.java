@@ -15,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import br.com.rdfreitas.modelo.Conhecimento;
-import br.com.rdfreitas.modelo.ConnectionFactory;
 
 @Repository
 public class JdbcConhecimentoDao {

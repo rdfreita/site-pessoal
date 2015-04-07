@@ -25,5 +25,13 @@
 		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+	
+	<bean id="mysqlDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+	    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+	    <property name="url" value="jdbc:mysql://mysql01-farm58.kinghost.net/freitasdev"/>
+	    <property name="username" value="freitasdev"/>
+	    <property name="password" value="o1w3t6"/>
+	</bean>
+	
 
 </beans>

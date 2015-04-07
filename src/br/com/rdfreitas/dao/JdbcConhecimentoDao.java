@@ -8,15 +8,23 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import br.com.rdfreitas.modelo.Conhecimento;
 import br.com.rdfreitas.modelo.ConnectionFactory;
 
+@Repository
 public class JdbcConhecimentoDao {
 	private final Connection connection;
 
-	public JdbcConhecimentoDao() {
+	@Autowired
+	public JdbcConhecimentoDao(DataSource datasource) {
 		try {
-			this.connection = new ConnectionFactory().getConnection();
+			this.connection = datasource.getConnection();
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}

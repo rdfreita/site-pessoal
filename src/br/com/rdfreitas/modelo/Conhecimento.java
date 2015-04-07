@@ -1,7 +1,17 @@
 package br.com.rdfreitas.modelo;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="skills")
 public class Conhecimento {
-	private int id, quantidade;
+	@Id
+	@GeneratedValue
+	private int id;
+	private int quantidade;
 	private String conhecimento;
 	
 	public int getId() {

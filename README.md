@@ -3,10 +3,15 @@
 Esse projeto é fruto da Jornada Backend que estou fazendo na Caelum e com fins de estudos e melhoria do meu site pessoal como minha vitrine, estou fazendo esse projeto em Java, utilizando primeiro o framework Spring MVC.
 
 Backend - Spring MVC, JSP
+
 Frontend - Bootstrap e Sass
+
 Automação de tarefas - Gruntjs
+
 Banco de dados - MySql
+
 Servidor - Tomcat
+
 IDE - Eclipse
 
 A idéia é facilitar a edição da página que utiliza componentes do Bootstrap. A parte dinâmica do site é a parte de conhecimentos onde para gerar as barras de porcentagem, utilizo o código:

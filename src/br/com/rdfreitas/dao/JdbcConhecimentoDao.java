@@ -144,7 +144,7 @@ public class JdbcConhecimentoDao {
 		Conhecimento conhecimento = new Conhecimento();
 
 		// popula o objeto conhecimento
-		conhecimento.setId(rs.getInt("id"));
+		conhecimento.setId(rs.getLong("id"));
 		conhecimento.setQuantidade(rs.getInt("quantidade"));
 		conhecimento.setConhecimento(rs.getString("conhecimento"));
 

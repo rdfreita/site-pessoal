@@ -31,6 +31,10 @@ No exemplo acima, onde tem o número "70" e a tecnologia "Javascript", fiz um pro
 ```
 O código agora fica assim.
 
-## Instalando as ferramnetas para o desenvolvimento ##
+## Instalando as ferramentas para o desenvolvimento ##
 
 Para utilizar o Gruntjs, precisamos antes instalar o **npm**, um pacote de gerenciamento do *Node Js* - Os passos podem ser visto no link [http://gruntjs.com/getting-started] (http://gruntjs.com/getting-started).
+
+Depois do Gruntjs instalado, adicionar a tarefa de Sass para edição do CSS e minificação do arquivo CSS.
+
+Precisamos também do jQuery para utilizar com o Bootstrap. O jQuery pode ser adquirido no link [http://jquery.com] (http://jquery.com).

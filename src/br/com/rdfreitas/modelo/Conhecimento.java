@@ -10,14 +10,14 @@ import javax.persistence.Table;
 public class Conhecimento {
 	@Id
 	@GeneratedValue
-	private int id;
+	private Long id;
 	private int quantidade;
 	private String conhecimento;
 	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public int getQuantidade() {

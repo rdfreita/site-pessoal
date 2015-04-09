@@ -1,3 +1,7 @@
+
+	<footer class="clearfix">
+		<p>&copy; Copyright Idei4 - Soluções Web</p>
+	</footer>
 		<!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
 		<script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>-->
 		<script src="resources/js/jquery.js"></script>

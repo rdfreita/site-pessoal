@@ -2,10 +2,8 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="rdfreitas" %>
 
 <c:import url="../cabecalho-sistema.jsp" />
-	<div class="container">
-		<header>
-			<h1>Cadastro de Conhecimento</h1>
-		</header>
+<c:import url="../header.jsp" />
+
 		<section class="main">
 			<form action="cadastraConhecimento" method="post">
 				<p class="input-group col-md-3 row">

@@ -2,6 +2,7 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="rdfreitas" %>
 
 <c:import url="../cabecalho-sistema.jsp" />
+<c:import url="../header.jsp" />
 	
 	<div class="panel panel-default panel-info col-md-10">
 	  <!-- Default panel contents -->

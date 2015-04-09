@@ -23,18 +23,21 @@ A idéia é facilitar a edição da página que utiliza componentes do Bootstrap. A p
 ```
 No exemplo acima, onde tem o número "70" e a tecnologia "Javascript", fiz um programa com o Spring MVC onde preencho um formulário com essas duas informações e populo essa informação tornando o processo dinâmico.
 
+O código agora fica assim.
+
 ```
 <c:forEach items="${skills}" var="conhecimento">
 	<rdfreitas:progressBar quantidade="${conhecimento.quantidade}" conhecimento="${conhecimento.conhecimento}" />
 </c:forEach>
 				
 ```
-O código agora fica assim.
 
 ## Instalando as ferramentas para o desenvolvimento ##
 
 Para utilizar o Gruntjs, precisamos antes instalar o **npm**, um pacote de gerenciamento do *Node Js* - Os passos podem ser visto no link [http://gruntjs.com/getting-started] (http://gruntjs.com/getting-started).
 
-Depois do Gruntjs instalado, adicionar a tarefa de Sass para edição do CSS e minificação do arquivo CSS.
+Depois do Gruntjs instalado, adicionar o [plugin do Sass] (https://www.npmjs.com/package/grunt-contrib-sass) para edição do CSS e minificação do arquivo CSS. Para essa tarefa é necessário que você tenha o Ruby e o Sass instalado na sua máquina. Se você utiliza o OS x ou Linux, provavelmente você já tem o Ruby instalado. Teste com "ruby -v" no seu terminal. Se realmente já estiver instalado o Ruby na sua máquina, execute "gem install sass" no seu terminal para instalar o Sass.
+
+Para instalar o Sass no Windows, [clique aqui] (http://sass-lang.com/install).
 
 Precisamos também do jQuery para utilizar com o Bootstrap. O jQuery pode ser adquirido no link [http://jquery.com] (http://jquery.com).

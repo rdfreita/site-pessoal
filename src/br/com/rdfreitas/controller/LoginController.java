@@ -22,7 +22,7 @@ private final JdbcUsuarioDao dao;
 	
 	@RequestMapping("loginForm")
 	public String loginForm(){
-		return "form-login";
+		return "site/form-login";
 	}
 	
 	@RequestMapping("efetuaLogin")

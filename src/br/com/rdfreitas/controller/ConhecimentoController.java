@@ -34,7 +34,7 @@ public class ConhecimentoController {
 	public String lista(Model model){
 		List<Conhecimento> conhecimentos = dao.lista();
 		model.addAttribute("skills", conhecimentos);
-		return "index";
+		return "site/index";
 	}
 	
 	@RequestMapping("lista")

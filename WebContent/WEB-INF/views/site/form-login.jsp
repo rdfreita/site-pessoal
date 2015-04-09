@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="rdfreitas" %>
 
-<c:import url="cabecalho-sistema.jsp" />
+<c:import url="../cabecalho-sistema.jsp" />
 
 	<h2>Página de login</h2>
 		<form action="efetuaLogin" method="post">

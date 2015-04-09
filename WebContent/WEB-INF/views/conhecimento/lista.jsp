@@ -5,12 +5,8 @@
 	
 	<div class="panel panel-default panel-info col-md-10">
 	  <!-- Default panel contents -->
-		<div class="panel-heading">Rodrigo Freitas</div>
-		<div class="panel-body">
-		  <p>Painel para edição dos conhecimentos</p>
-		  <p>Para adicionar um novo conhecimento, <a href="novoConhecimento">clique aqui</a>.
-		  <p class="logout">Para sair do sistema, <a href="logout">clique aqui</a></p>
-		</div>
+		<div class="panel-heading">Rodrigo Freitas - Lista de conhecimentos</div>
+		
 		
 		<!-- Table -->
 		<table class="table">
@@ -34,4 +30,4 @@
 			</tbody>
 		</table>
 	</div>
-<c:import url="../rodape.jsp" />
+<c:import url="../rodape-sistema.jsp" />

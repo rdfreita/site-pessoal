@@ -4,4 +4,4 @@
 <c:import url="../cabecalho-sistema.jsp" />
 	<p>Seu conhecimento foi adicionado com sucesso!</p>
 	<h3><a href="http://www.freitasdev.kinghost.net/rdfreitas/lista">Voltar para página principal</a></h3>
-<c:import url="../rodape.jsp" />
+<c:import url="../rodape-sistema.jsp" />

@@ -5,7 +5,7 @@
 
 		<article class="container-fluid">
 		<!-- início do header -->
-			<header class="row">
+			<header>
 				<nav class="navbar navbar-default navbar-fixed-top">
 					<div class="navbar-header">
 						
@@ -18,7 +18,7 @@
 						<li><a href="#">Portfolio</a></li>
 					</ul>
 				</nav>
-				<section class="meu-perfil row">
+				<section class="meu-perfil clearfix">
 					<div class="page-header">
 						<h1>Rodrigo Freitas</h1>
 					</div>
@@ -38,7 +38,7 @@
 			</header>
 			<!-- Fim do header -->
 			<!-- Inicio da seção formação -->
-			<section class="formacao row">
+			<section class="formacao clearfix">
 				<div class="titulos-formacao">
 					<ul>
 						<li class="titulo-anos col-md-4">Ano</li>
@@ -215,7 +215,7 @@
 			</section>
 			<!-- Fim da seção formação -->
 			<!-- Início da seção conhecimento -->
-			<section class="classeConhecimento row">
+			<section class="classeConhecimento clearfix">
 				<h2>Conhecimentos</h2>
 				<div class="col-md-10">
 				
@@ -226,7 +226,7 @@
 			</section>
 			<!-- Fim da seção conhecimento -->
 			<!-- Início da seção portfolio -->
-			<section class="portfolio row">
+			<section class="portfolio clearfix">
 				<h2>Portfolio</h2>
 				<ul class="media-list">
 					<li class="media col-md-11 projeto">

@@ -23,4 +23,4 @@
 			</form>
 		</section>
 	</div>
-<c:import url="../rodape.jsp" />
+<c:import url="../rodape-sistema.jsp" />

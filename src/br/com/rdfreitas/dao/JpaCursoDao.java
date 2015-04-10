@@ -32,5 +32,9 @@ public class JpaCursoDao implements CursoDao {
 	public List<Cursos> listaCursos() {
 		return manager.createQuery("select curso from Cursos curso").getResultList();
 	}
-
+	public void finaliza(Long id){
+		Cursos curso = buscaPorId(id);
+		curso.setFinalizado(true);
+		manager.merge(curso);
+	}
 }

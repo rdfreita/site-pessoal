@@ -52,4 +52,9 @@ public class CursoController {
 			dao.altera(curso);
 			return "redirect:listaCursos";
 		}
+		@RequestMapping("finalizaCurso")
+		public String finaliza(Long id){
+			dao.finaliza(id);
+			return "curso/finalizada";
+		}
 }

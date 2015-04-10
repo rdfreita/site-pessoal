@@ -27,12 +27,13 @@
 					<tr>
 						<td>${curso.curso}</td>
 						<td>${curso.ano}</td>
-						<td>${curso.periodo}</td>
 						<c:if test="${curso.finalizado eq false}">
-							<td>Não finalizado</td>
+							<td>${curso.periodo}</td>
+							<td class="finalizado"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></td>
 						</c:if>
 						<c:if test="${curso.finalizado eq true}">
-							<td>Finalizado</td>
+							<td>&nbsp;</td>
+							<td class="finalizado"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span></td>
 						</c:if>
 						<td><a href="mostraCurso?id=${curso.id}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>
 						<td><a href="removeCurso?id=${curso.id}"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>

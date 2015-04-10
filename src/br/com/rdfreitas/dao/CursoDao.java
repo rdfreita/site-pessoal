@@ -12,6 +12,7 @@ public interface CursoDao {
 	void adiciona(Cursos curso);
 	void altera(Cursos curso);
 	void remove(Cursos curso);
+	void finaliza(Long id);
 	
 }
 	

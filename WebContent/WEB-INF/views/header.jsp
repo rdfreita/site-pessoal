@@ -20,8 +20,15 @@
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Conhecimentos <span class="caret"></span></a>
 		          <ul class="dropdown-menu" role="menu">
-		            <li><a href="lista">Lista de Conhecimentos</a></li>
+		            <li><a href="listaConhecimentos">Lista de Conhecimentos</a></li>
 		            <li><a href="novoConhecimento">Adicionar Conhecimento</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cursos <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="listaCursos">Lista de Cursos</a></li>
+		            <li><a href="novoCurso">Adicionar Cursos</a></li>
 		          </ul>
 		        </li>
 		      </ul>

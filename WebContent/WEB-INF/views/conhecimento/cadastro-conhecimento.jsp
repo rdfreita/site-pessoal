@@ -19,6 +19,5 @@
 				</p>
 			</form>
 		</section>
-	</div>
 	
 <c:import url="../rodape-sistema.jsp" />

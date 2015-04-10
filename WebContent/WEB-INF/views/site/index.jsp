@@ -52,8 +52,8 @@
 					</div>
 					<div class="cursos col-md-4">
 						<ul>
-							<li>Java e Orientação a Objetos (Caelum) - CONCLUÍDO</li>
-							<li>Java para Desenvolvimento Web (Caelum) - 23/03 à 06/04</li>
+							<li>Java e Orientação a Objetos (Caelum)</li>
+							<li>Java para Desenvolvimento Web (Caelum)</li>
 							<li>Desenvolvimento Web com HTML, CSS e JavaScript (Caelum) - 06/04 à 17/04</li>
 							<li>Práticas ágeis de desenvolvimento de Software em Java (Caelum) - 18/05 à 22/05</li>
 							<li>JPA, Hibernate e EJB Lite (Caelum) - 08/06 à 19/06</li>

@@ -6,13 +6,16 @@
 
 		<section class="main">
 			<form action="cadastraCurso" method="post">
-				<p class="input-group col-md-3 row">
+				<p class="input-group col-md-3 clearfix">
 					<input type="text" name="curso" id="curso" class="form-control" placeholder="Qual o curso feito?" aria-describedby="basic-addon2" />
 				</p>
-				<p class="input-group col-md-5 row">
+				<p class="input-group col-md-3 clearfix">
 					<input type="text" name="ano" id="ano" placeholder="Qual o ano que foi feito o curso?" class="form-control" />
 				</p>
-				<p class="botao-submit row">
+				<p class="input-group col-md-3 clearfix">
+					<input type="text" name="periodo" id="periodo" placeholder="Qual o período do curso?" class="form-control" />
+				</p>
+				<p class="botao-submit clearfix">
 					<input type="submit" value="Cadastrar curso" />
 				</p>
 			</form>

@@ -30,16 +30,16 @@ public class ConhecimentoController {
 		return "conhecimento/adicionado";
 	}
 	
-	@RequestMapping("/")
+	/*@RequestMapping("/")
 	public String lista(Model model){
 		List<Conhecimento> conhecimentos = dao.lista();
 		model.addAttribute("skills", conhecimentos);
 		return "site/index";
-	}
+	}*/
 	
 	@RequestMapping("listaConhecimentos")
 	public String listaConhecimento(Model model){
-		List<Conhecimento> conhecimentos = dao.lista();
+		List<Conhecimento> conhecimentos = dao.listaConhecimentos();
 		model.addAttribute("skills", conhecimentos);
 		return "conhecimento/lista";
 	}

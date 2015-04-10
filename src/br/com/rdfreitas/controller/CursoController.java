@@ -31,7 +31,7 @@ public class CursoController {
 		}
 		@RequestMapping("listaCursos")
 		public String listaCursos(Model model){
-			List<Cursos> cursos = dao.lista();
+			List<Cursos> cursos = dao.listaCursos();
 			model.addAttribute("modulos", cursos);
 			return "curso/lista";
 		}

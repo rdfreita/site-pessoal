@@ -28,7 +28,7 @@ public class JpaConhecimentoDao implements ConhecimentoDao {
 		Conhecimento conhecimentoARemover = buscaPorId(conhecimento.getId());
 		manager.remove(conhecimentoARemover);
 	}
-	public List<Conhecimento> lista() {
+	public List<Conhecimento> listaConhecimentos() {
 		return manager.createQuery("select cn from Conhecimento cn").getResultList();
 	}
 }

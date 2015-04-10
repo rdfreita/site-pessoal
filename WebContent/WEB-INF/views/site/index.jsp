@@ -52,12 +52,15 @@
 					</div>
 					<div class="cursos col-md-4">
 						<ul>
-							<li>Java e Orientação a Objetos (Caelum)</li>
-							<li>Java para Desenvolvimento Web (Caelum)</li>
-							<li>Desenvolvimento Web com HTML, CSS e JavaScript (Caelum) - 06/04 à 17/04</li>
-							<li>Práticas ágeis de desenvolvimento de Software em Java (Caelum) - 18/05 à 22/05</li>
-							<li>JPA, Hibernate e EJB Lite (Caelum) - 08/06 à 19/06</li>
-							<li>JSF2, Primefaces 4 e CDI (Caelum) - 29/06 à 09/07</li>
+							<c:if test="${modulo.ano eq '2015'}">
+								<c:if test="${modulo.finalizado eq false}">
+									<li>${modulo.curso} - ${modulo.periodo}</li>
+								</c:if>
+								<c:if test="${modulo.finalizado eq true}">
+									<li>${modulo.curso}</li>
+								</c:if>
+							</c:if>
+							
 						</ul>
 					</div>
 					<div class="experiencias col-md-4">

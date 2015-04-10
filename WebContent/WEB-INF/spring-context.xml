@@ -32,7 +32,7 @@
 		<property name="username" value="freitasdev" />
 		<property name="password" value="o1w3t6" />
 	</bean>
-	
+
 	
 	<!-- gerenciamento de jpa pelo spring -->
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">

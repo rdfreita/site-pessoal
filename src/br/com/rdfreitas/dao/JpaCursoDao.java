@@ -29,7 +29,7 @@ public class JpaCursoDao implements CursoDao {
 		Cursos cursoARemover = buscaPorId(cursos.getId());
 		manager.remove(cursoARemover);
 	}
-	public List<Cursos> lista() {
+	public List<Cursos> listaCursos() {
 		return manager.createQuery("select curso from Cursos curso").getResultList();
 	}
 

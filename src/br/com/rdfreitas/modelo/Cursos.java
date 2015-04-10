@@ -13,6 +13,20 @@ public class Cursos {
 	@GeneratedValue
 	private Long id;
 	private String curso;
+	private String periodo;
+	private boolean finalizado;
+	public String getPeriodo() {
+		return periodo;
+	}
+	public void setPeriodo(String periodo) {
+		this.periodo = periodo;
+	}
+	public boolean isFinalizado() {
+		return finalizado;
+	}
+	public void setFinalizado(boolean finalizado) {
+		this.finalizado = finalizado;
+	}
 	private int ano;
 	
 	public Long getId() {

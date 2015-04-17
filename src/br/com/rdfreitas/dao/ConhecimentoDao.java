@@ -7,7 +7,7 @@ import br.com.rdfreitas.modelo.Conhecimento;
 public interface ConhecimentoDao {
 	
 	Conhecimento buscaPorId(Long id);
-	List<Conhecimento> listaConhecimentos();
+	List<Conhecimento> lista();
 	void adiciona(Conhecimento cn);
 	void altera(Conhecimento cn);
 	void remove(Conhecimento cn);

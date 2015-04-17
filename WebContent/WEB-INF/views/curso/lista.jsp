@@ -32,7 +32,7 @@
 							<td class="finalizado"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></td>
 						</c:if>
 						<c:if test="${curso.finalizado eq true}">
-							<td>&nbsp;</td>
+							<td>${curso.periodo}</td>
 							<td class="finalizado"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span></td>
 						</c:if>
 						<td><a href="mostraCurso?id=${curso.id}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></td>

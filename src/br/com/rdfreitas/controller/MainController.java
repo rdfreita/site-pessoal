@@ -9,26 +9,28 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import br.com.rdfreitas.dao.ConhecimentoDao;
-import br.com.rdfreitas.dao.CursoDao;
+import br.com.rdfreitas.dao.JpaConhecimentoDao;
+import br.com.rdfreitas.dao.JpaCursoDao;
 import br.com.rdfreitas.modelo.Conhecimento;
-import br.com.rdfreitas.modelo.Cursos;
+import br.com.rdfreitas.modelo.Curso;
 
 @Transactional
 @Controller
 public class MainController {
-
-	ConhecimentoDao daoConhecimento;
-	CursoDao daoCurso;
+	
+	@Autowired
+	JpaConhecimentoDao daoConhecimento;
+	@Autowired
+	JpaCursoDao daoCurso;
 	
 	@RequestMapping("/")
-	public String lista(Model model){
-		List<Conhecimento> conhecimentos = daoConhecimento.listaConhecimentos();
-		model.addAttribute("skills", conhecimentos);
+	public String listagem(Model model){
+		List<Conhecimento> conhecimentos = daoConhecimento.lista();
+		model.addAttribute("tecnologia", conhecimentos);
 		
-		List<Cursos> cursos = daoCurso.listaCursos();
-		model.addAttribute("modulos", cursos);
-
+		List<Curso> cursos = daoCurso.listaCursos();
+		model.addAttribute("aulas", cursos);
+		
 		return "site/index";
 	}
 	

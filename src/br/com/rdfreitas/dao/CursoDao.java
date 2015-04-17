@@ -2,17 +2,15 @@ package br.com.rdfreitas.dao;
 
 import java.util.List;
 
-import br.com.rdfreitas.modelo.Cursos;
+import br.com.rdfreitas.modelo.Curso;
 
 
 
 public interface CursoDao {
-	Cursos buscaPorId(Long id);
-	List<Cursos> listaCursos();
-	void adiciona(Cursos curso);
-	void altera(Cursos curso);
-	void remove(Cursos curso);
-	void finaliza(Long id);
-	
+	Curso buscaPorId(Long id);
+	List<Curso> listaCursos();
+	void adiciona(Curso curso);
+	void altera(Curso curso);
+	void remove(Curso curso);	
 }
 	

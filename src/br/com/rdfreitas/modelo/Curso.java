@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="cursos")
-public class Cursos {
+public class Curso {
 	
 	@Id
 	@GeneratedValue
@@ -15,18 +15,6 @@ public class Cursos {
 	private String curso;
 	private String periodo;
 	private boolean finalizado;
-	public String getPeriodo() {
-		return periodo;
-	}
-	public void setPeriodo(String periodo) {
-		this.periodo = periodo;
-	}
-	public boolean isFinalizado() {
-		return finalizado;
-	}
-	public void setFinalizado(boolean finalizado) {
-		this.finalizado = finalizado;
-	}
 	private int ano;
 	
 	public Long getId() {
@@ -46,5 +34,17 @@ public class Cursos {
 	}
 	public void setAno(int ano) {
 		this.ano = ano;
+	}
+	public String getPeriodo() {
+		return periodo;
+	}
+	public void setPeriodo(String periodo) {
+		this.periodo = periodo;
+	}
+	public boolean isFinalizado() {
+		return finalizado;
+	}
+	public void setFinalizado(boolean finalizado) {
+		this.finalizado = finalizado;
 	}
 }

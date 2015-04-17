@@ -26,5 +26,10 @@
 		<servlet-name>springmvc</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+	
+	<!-- Tempo para o usuário perder a sessão -->
+	<session-config>
+		<session-timeout>3</session-timeout>
+	</session-config>
 
 </web-app>

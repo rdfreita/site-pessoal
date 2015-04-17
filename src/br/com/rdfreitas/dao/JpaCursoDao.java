@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 import br.com.rdfreitas.modelo.Conhecimento;
-import br.com.rdfreitas.modelo.Cursos;
+import br.com.rdfreitas.modelo.Curso;
 
 @Repository
 public class JpaCursoDao implements CursoDao {
@@ -16,25 +16,20 @@ public class JpaCursoDao implements CursoDao {
 	@PersistenceContext
 	EntityManager manager;
 	
-	public void adiciona(Cursos cursos){
+	public void adiciona(Curso cursos){
 		manager.persist(cursos);
 	}
-	public void altera(Cursos cursos){
+	public void altera(Curso cursos){
 		manager.merge(cursos);
 	}
-	public Cursos buscaPorId(Long id){
-		return manager.find(Cursos.class, id);
+	public Curso buscaPorId(Long id){
+		return manager.find(Curso.class, id);
 	}
-	public void remove(Cursos cursos){
-		Cursos cursoARemover = buscaPorId(cursos.getId());
+	public void remove(Curso cursos){
+		Curso cursoARemover = buscaPorId(cursos.getId());
 		manager.remove(cursoARemover);
 	}
-	public List<Cursos> listaCursos() {
-		return manager.createQuery("select curso from Cursos curso").getResultList();
-	}
-	public void finaliza(Long id){
-		Cursos curso = buscaPorId(id);
-		curso.setFinalizado(true);
-		manager.merge(curso);
+	public List<Curso> listaCursos() {
+		return manager.createQuery("select curso from Curso curso").getResultList();
 	}
 }

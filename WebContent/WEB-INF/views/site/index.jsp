@@ -52,15 +52,16 @@
 					</div>
 					<div class="cursos col-md-4">
 						<ul>
-							<c:if test="${modulo.ano eq '2015'}">
-								<c:if test="${modulo.finalizado eq false}">
-									<li>${modulo.curso} - ${modulo.periodo}</li>
+							<c:forEach items="${aulas}" var="curso">
+								<c:if test="${curso.ano == 2015}">
+									<c:if test="${not empty curso.finalizado}">
+										<li>${curso.curso}</li>
+									</c:if>
+									<c:if test="${empty curso.finalizado}">
+										<li>${curso.curso} - ${curso.periodo}</li>
+									</c:if>
 								</c:if>
-								<c:if test="${modulo.finalizado eq true}">
-									<li>${modulo.curso}</li>
-								</c:if>
-							</c:if>
-							
+							</c:forEach>							
 						</ul>
 					</div>
 					<div class="experiencias col-md-4">
@@ -222,7 +223,7 @@
 				<h2>Conhecimentos</h2>
 				<div class="col-md-10">
 				
-				<c:forEach items="${skills}" var="conhecimento">
+				<c:forEach items="${tecnologia}" var="conhecimento">
 					<rdfreitas:progressBar quantidade="${conhecimento.quantidade}" conhecimento="${conhecimento.conhecimento}" />
 				</c:forEach>
 				</div>

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.rdfreitas.dao.CursoDao;
 import br.com.rdfreitas.modelo.Conhecimento;
-import br.com.rdfreitas.modelo.Cursos;
+import br.com.rdfreitas.modelo.Curso;
 
 @Transactional
 @Controller
@@ -25,18 +25,18 @@ public class CursoController {
 			return "curso/cadastro-curso";
 		}
 		@RequestMapping("cadastraCurso")
-		public String adiciona(Cursos curso){
+		public String adiciona(Curso curso){
 			dao.adiciona(curso);
 			return "curso/adicionado";
 		}
 		@RequestMapping("listaCursos")
 		public String listaCursos(Model model){
-			List<Cursos> cursos = dao.listaCursos();
+			List<Curso> cursos = dao.listaCursos();
 			model.addAttribute("modulos", cursos);
 			return "curso/lista";
 		}
 		@RequestMapping("removeCurso")
-		public String remove(Cursos curso){
+		public String remove(Curso curso){
 			dao.remove(curso);
 			return "redirect:listaCursos";
 		}
@@ -48,13 +48,8 @@ public class CursoController {
 		}
 		
 		@RequestMapping("alteraCurso")
-		public String altera(Cursos curso){
+		public String altera(Curso curso){
 			dao.altera(curso);
 			return "redirect:listaCursos";
-		}
-		@RequestMapping("finalizaCurso")
-		public String finaliza(Long id){
-			dao.finaliza(id);
-			return "curso/finalizada";
 		}
 }
